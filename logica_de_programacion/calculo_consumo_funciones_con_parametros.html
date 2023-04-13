@@ -1,0 +1,38 @@
+<!-- Created on Thu April 2023
+
+@author: Juan Elier Rosales Rosas
+@version: 1.0
+@empresa: ONE -->
+<meta charset="UTF-8">
+
+<h3>¿Alcohol o gasolina?</h3>
+
+<script>
+//Declaración de funciones
+    //Funcion para poner un numero determinado de saltos de linea
+    function saltarlinea(){
+
+        document.write("<br><br>");
+
+    }
+    //Funcion para para imprimir
+    function imprimir(frase){
+
+        document.write(frase);
+        saltarlinea();
+    }
+
+    //Declaracion de variables
+    var recorridoGasolina = 480
+    var recorridoAlcohol = 300
+    var litrosGastados = 40
+    var eficienciaGasolina = recorridoGasolina/litrosGastados
+    var eficienciaAlcohol = recorridoAlcohol/litrosGastados
+
+    imprimir("Este programa calcula la eficiencia de un automovil al usar alcohol y gasolina")
+
+    imprimir("La eficiencia del automovil  al usar gasolina es: " + eficienciaGasolina + " km por litro de gasolina.");
+
+    imprimir("La eficiencia del automovil al usar alcohol es: " + eficienciaAlcohol + " km por litro de alcohol.");
+
+</script>
