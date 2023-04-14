@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<!-- Created on Thu April 2023
+
+@author: Juan Elier Rosales Rosas
+@version: 1.0
+@empresa: ONE -->
+<h1>¿Será que puedo conducir?</h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+    //Declaración de variables
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    //Condiacionales
+    if (edad >= 18){
+        var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+        if (tieneLicencia == "S") {
+            imprimir("Usted puede conducir.")
+        }   
+    }
+    else{
+        imprimir("Usted no puede conducir");
+    }
+
+</script>
